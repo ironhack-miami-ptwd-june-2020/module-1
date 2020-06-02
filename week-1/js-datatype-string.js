@@ -7,8 +7,8 @@ let name = 'Ana';
 console.log(`Hello there, ${name}!`);
 // ==> Hello there, Ana!
 
-console.log(`${name} walks every day at least ${1 + 2} km.`);
-// ==> Ana walks every day at least 3km.
+console.log(`${name} has ${22+12} years.`);
+// ==> Ana has 34 years.
 
 const str = 'this is our test string';
 
