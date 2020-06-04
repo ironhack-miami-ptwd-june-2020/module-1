@@ -7,8 +7,8 @@ let name = 'Ana';
 console.log(`Hello there, ${name}!`);
 // ==> Hello there, Ana!
 
-console.log(`${name} walks every day at least ${1 + 2} km.`);
-// ==> Ana walks every day at least 3km.
+console.log(`${name} has ${22+12} years.`);
+// ==> Ana has 34 years.
 
 const str = 'this is our test string';
 
@@ -83,19 +83,17 @@ console.log(useSliceWithNegative); // ring
 // startsWith() method - determines whether a string begins with the characters of a specified string,
 // returns true or false as appropriate
 
-const str = 'To be, or not to be, that is the question.';
+const str1 = 'To be, or not to be, that is the question.';
 
-console.log(str.startsWith('To be')); // true
-console.log(str.startsWith('not to be')); // false
-console.log(str.startsWith('not to be', 10)); // true
+console.log(str1.startsWith('To be')); // true
+console.log(str1.startsWith('not to be')); // false
+console.log(str1.startsWith('not to be', 10)); // true
 
 // ************************************************************
 
 // endsWith() method - determines whether a string ends with the characters of a specified string
 // returns true or false as appropriate. It’s also case-sensitive.
 
-const str = 'To be, or not to be, that is the question.';
-
-console.log(str.endsWith('question.')); // true
-console.log(str.endsWith('to be')); // false
-console.log(str.endsWith('to be', 19)); // true
+console.log(str1.endsWith('question.')); // true
+console.log(str1.endsWith('to be')); // false
+console.log(str1.endsWith('to be', 19)); // true
