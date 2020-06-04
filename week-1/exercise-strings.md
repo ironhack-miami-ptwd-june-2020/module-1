@@ -31,5 +31,5 @@ console.log(fullName); // Alejandro Garcia
 
 ```javascript
 console.log(`My name is ${fullName} and I am ${age}.`);
-// My name is Alejandro and I am 27s.
+// My name is Alejandro and I am 27.
 ```
