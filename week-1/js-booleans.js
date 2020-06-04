@@ -16,9 +16,9 @@ else console.log('not really true');
 // === -> compares both value and the type (strict equality)
 
 let x = 5;
-console.log(typeof x);
+console.log(typeof x); // number
 let y = '5';
-console.log(typeof y);
+console.log(typeof y); // string
 
 console.log(`USING == : ${x == y}`);
 console.log(`USING === : ${x === y}`); // ✅ ✅ ✅
@@ -26,11 +26,11 @@ console.log(`USING === : ${x === y}`); // ✅ ✅ ✅
 let city = 'miami';
 // we can not change the value
 city[0] = 'M';
-console.log(city);
+console.log(city); // miami
 
 // we can re-assign the variable
 city = 'mexico city';
-console.log(city);
+console.log(city); // mexico city
 
 console.log(true && false); // false
 console.log(11 % 3 === 2); // true
