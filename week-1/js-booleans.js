@@ -20,10 +20,11 @@ console.log(typeof x); // number
 let y = '5';
 console.log(typeof y); // string
 
-console.log(`USING == : ${x == y}`);
-console.log(`USING === : ${x === y}`); // ✅ ✅ ✅
+console.log(`USING == : ${x == y}`); // USING == : true 🚨🚨🚨
+console.log(`USING === : ${x === y}`); // // USING === : false ✅ ✅ ✅
 
 let city = 'miami';
+
 // we can not change the value
 city[0] = 'M';
 console.log(city); // miami
