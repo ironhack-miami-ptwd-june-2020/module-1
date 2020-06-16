@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The HTML5 Breakfast Site</title>
+        <meta charset="UTF-8" />
+
+        <!-- link tags are self closing and have an href to link the style sheet that will be used by it -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav id="topnav">
+            <a href="index.html">HOME</a> | <a href="about.html">ABOUT US</a> |
+            <a class="navink" href="menu.html">MENU</a> |
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+
+        <div id="container" style="background-color: rgb(56, 138, 117);">
+            <section id="content">
+                <h1>The IronHack Breakfast Place</h1>
+                <h2>This is an h 2</h2>
+                <h3>This is the h3</h3>
+                <h4>Look I'm an H4</h4>
+                <h5>small looking h5 text</h5>
+                <h6>This is the tiniest of the h family h6</h6>
+
+                <p>Here you will find all sorts of delicious treats</p>
+                <figure>
+                    <img
+                        src="https://media.giphy.com/media/h0wtS2gctKYKc/giphy.gif"
+                        width="300"
+                        alt="coffee with cream image"
+                    />
+                    <figcaption
+                        style="
+                            color: floralwhite;
+                            font-weight: bold;
+                            text-decoration: line-through;
+                        "
+                    >
+                        powered by brekkie.
+                    </figcaption>
+                </figure>
+            </section>
+        </div>
+
+        <div id="ourCommitment" style="background-color: rgb(107, 138, 56);">
+            <p>
+                Our commitment is to use impeccable sourcing and quality
+                ingredients to help you code. An ongoing collaboration between
+                the classroom staff and the development team allow us to iterate
+                our content and give our students the coding 'fruits and
+                vegetables' -mainly made of JavaScript- that they need to grow
+                as a healthy developer.
+            </p>
+        </div>
+
+        <div>
+            <!-- We need to change the message every week -->
+            <pre> Code everyday and enjoy your coffee every morning </pre>
+
+            <h3>Our food</h3>
+            <ul>
+                <li>
+                    Our coffee
+                    <ol>
+                        <!-- i tag is the same as an em tag ==> they both make the text italic -->
+                        <li><i>Cafe Latte</i></li>
+                        <li>Americano</li>
+                        <li>Capuccino</li>
+                    </ol>
+                </li>
+
+                <li>
+                    Our teas
+                    <ol>
+                        <li><em>Earl Grey</em></li>
+                        <li>English Breakfast</li>
+                        <li>Herb Tea</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Bootcamp</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <!-- strong tag is the same as a b tag ==> they both make the text bold -->
+                <td><strong> 1 </strong></td>
+                <td>Jose Perez</td>
+                <td>FullStack WebDev</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td><b> 2 </b></td>
+                <td>Michael Smith</td>
+                <td>FrontEnd WebDev</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr>
+                <td><b> 3 </b></td>
+                <td>Ariel Quinones</td>
+                <td>MasterChef WebDev</td>
+                <td>Miami</td>
+            </tr>
+        </table>
+
+        <hr />
+
+        <form action="" method="post">
+            <label for="name">Name</label>
+            <br />
+            <input id="name" type="text" />
+            <button type="submit">Save</button>
+        </form>
+
+        <br />
+
+        <footer>
+            <a class="navLink footerLink" href="#topnav">Jump To Top</a>
+            <span class="love">Made with love by Ironhack</span>
+        </footer>
+
+        <!-- script tags have a src parameter in order to import a file, they are not self closing and can have js written between the open and closing tag -->
+        <script>
+            console.log("Welcome to my tea and coffee page");
+        </script>
+    </body>
+</html>
