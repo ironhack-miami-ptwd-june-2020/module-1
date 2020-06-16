@@ -1,0 +1,105 @@
+@keyframes myslidein {
+    0% {
+        margin-left: 150%;
+        width: 400px;
+        transform: rotate(45deg);
+    }
+
+    20% {
+        margin-left: 0%;
+        width: 200px;
+        transform: rotate(90deg);
+    }
+
+    40% {
+        margin-left: 150%;
+        width: 400px;
+        transform: rotate(135deg);
+    }
+
+    60% {
+        margin-left: 0%;
+        width: 200px;
+        transform: rotate(180deg);
+    }
+
+    80% {
+        margin-left: 150%;
+        width: 400px;
+        transform: rotate(270deg);
+    }
+
+    100% {
+        margin-left: 0%;
+        width: 200px;
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0 50px;
+    background-color: pink;
+}
+
+/* nothing in front of the name is to target a tag in html */
+img {
+    width: 200px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0;
+    animation-name: myslidein;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+}
+
+img:hover {
+    /* animation-play-state: paused; */
+    width: 250px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0;
+}
+
+/* this is how you target attribute of a tag in html */
+label[for="name"] {
+    color: cadetblue;
+}
+
+/* this is to target the id */
+#topnav {
+    border-bottom: 1px solid black;
+    height: 40px;
+    background-color: rgb(160, 148, 160);
+    text-align: center;
+    padding-top: 15px;
+}
+
+#topnav a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: yellow;
+    font-weight: 800;
+    font-size: 1rem;
+    transition: font-size 2s ease-out 0s;
+}
+
+#topnav a:hover {
+    font-size: 25px;
+    transition: font-size 2s ease-in 0s;
+}
+
+#topnav > a:nth-child(2) {
+    font-weight: 0;
+    font-style: italic;
+    color: #952603;
+}
+
+/* . before the name is to get the class name */
+.footerLink,
+#topnav > a.navLink {
+    color: royalblue;
+    margin: 0 20px;
+}
