@@ -56,7 +56,7 @@ const displayArrayElements = async (arrayInput) => {
 
     setTimeout(thisIsTheCallBack, 3000);
     // setTimeout(() => {
-
+    //  thisIsTheCallBack();
     // }, timeout);
 
     console.log({ arrayInput });
@@ -86,7 +86,6 @@ const displayArrayElements = async (arrayInput) => {
 
 setInterval(thisIsTheCallBack, 7000);
 displayArrayElements(randomArr);
-setTimeout(clearInterval, 21000);
 
 // hoisting is when a function is hoisted to the top of the file, therefore it can be read at any point. Unlike variables that must be declared prior to being used.
 function thisIsTheCallBack() {
