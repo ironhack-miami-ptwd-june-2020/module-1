@@ -1,0 +1,16 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.table {
+    background-color: orange;
+}
+
+.row div {
+    border: 1px solid black;
+}
+
+.table {
+    background-color: pink;
+}
