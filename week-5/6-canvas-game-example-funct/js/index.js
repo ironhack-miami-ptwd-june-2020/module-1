@@ -91,17 +91,21 @@ document.addEventListener('keydown', event => {
   //   console.log(event);
   switch (event.keyCode) {
     case 37:
+    case 65:
       if (supermanX >= 0) supermanX -= 10;
       break;
     case 39:
+    case 83:
       if (supermanX <= 850) supermanX += 10;
       break;
 
     case 38:
-      supermanY -= 10;
+    case 87:
+      if (supermanY >= 10) supermanY -= 10;
       break;
 
     case 40:
+    case 68:
       supermanY += 10;
       break;
     default:
@@ -116,9 +120,10 @@ function gameOver() {
 
   const tiredSuperman = new Image();
   tiredSuperman.src = './images/tired-superman.png';
-  tiredSuperman.onload = () => {
+  // this is not in the loop, so we need to use 'load' event
+  tiredSuperman.addEventListener('load', () => {
     ctx.drawImage(tiredSuperman, 400, 300, 150, 150);
-  };
+  });
 
   isOver = true;
 
