@@ -99,7 +99,7 @@ Let's see what is changed in the way we invoke functions now:
 study('JS', enjoy);
 ```
 
-Called like this, we are making sure that `study()` doesn't get executed before `enjoy()`.
+Called like this, we are making sure that `enjoy()` doesn't get executed before `study()`.
 
 To help you understand better, this is the same as passing the second (callback) function definition directly in the function call of the first function:
 
