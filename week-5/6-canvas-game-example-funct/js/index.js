@@ -73,10 +73,20 @@ function drawingLoop() {
   }
 }
 
+// let supermanX = 0;
+// let supermanY = 200;
+// supermanHeight = 150;
+// supermanWidth = 150;
+
+// let fireballX = 800;
+// let fireballY = 200;
+// fireballHeight = 70;
+// fireballWidth = 70;
+
 // all 4 conditions need to be true in order to return true
 function checkCollision(obj1x, obj1y, obj2x, obj2y) {
-  // supermanY + superman-height >= fireballY
   return (
+    // supermanY + superman-height >= fireballY
     obj1y + 150 >= obj2y &&
     // supermanY <= fireballY + fireball-height
     obj1y <= obj2y + 70 &&
