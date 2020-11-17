@@ -9,7 +9,8 @@ class Component {
   }
 
   drawComponent(imgSource) {
-    console.log(imgSource);
+    // console.log(imgSource);
+
     const theCtx = this.game.ctx;
     this.img.src = imgSource;
     // this.img.addEventListener('load', () => {
@@ -17,30 +18,32 @@ class Component {
     // });
   }
 
-  getLeft() {
-    return this.x;
-  }
+  // getLeft() {
+  //   return this.x;
+  // }
 
-  getRight() {
-    return this.x + this.width - 30;
-  }
+  // getRight() {
+  //   return this.x + this.width - 30;
+  // }
 
-  getTop() {
-    return this.y + 30;
-  }
+  // getTop() {
+  //   return this.y + 30;
+  // }
 
-  getBottom() {
-    return this.y + this.height - 50;
-  }
+  // getBottom() {
+  //   return this.y + this.height - 50;
+  // }
 
   didCollide(otherComp) {
-    const crossLeft = otherComp.x >= this.getLeft() && otherComp.x <= this.getRight();
-    const crossRight =
-      otherComp.x + otherComp.width >= this.getLeft() && otherComp.x + otherComp.width <= this.getRight();
-    const crossTop = otherComp.y <= this.getBottom() && otherComp.y >= this.getTop();
+    const crossRight = otherComp.x >= this.x && otherComp.x <= this.x + this.width - 30;
 
-    const crossBottom =
-      otherComp.y + otherComp.height >= this.getTop() && otherComp.y + otherComp.height <= this.getBottom();
+    const crossLeft =
+      otherComp.x + otherComp.width >= this.x && otherComp.x + otherComp.width <= this.x + this.width - 30;
+
+    const crossBottom = otherComp.y <= this.y + this.height - 50 && otherComp.y >= this.y + 30;
+
+    const crossTop =
+      otherComp.y + otherComp.height >= this.y + 30 && otherComp.y + otherComp.height <= this.y + this.height - 50;
 
     if ((crossLeft || crossRight) && (crossBottom || crossTop)) {
       return true;
