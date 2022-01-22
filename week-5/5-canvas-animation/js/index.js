@@ -31,7 +31,8 @@ function updateCanvas() {
 
   // 1st way to make some animation is using setTimeout()
   // this way is the same as the recursive function
-  // the benefit is to be able to influence the speed through the milliseconds (in example below it's 30ms ==> the function updateCanvas() gets called every 30ms)
+  // the benefit is to be able to influence the speed through the milliseconds 
+  // (in example below it's 30ms ==> the function updateCanvas() gets called every 30ms)
   // setTimeout(() => updateCanvas(), 30);
 
   // 2nd way: requestAnimationFrame(someFunctionNameWithoutParentheses)
