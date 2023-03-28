@@ -22,7 +22,9 @@ console.log(`original: ${arr}`); // original: 1,2,3
 Let's demo:
 
 ```jsx
-const newArr = arr.forEach(el => el * 3);
+const newArr = arr.forEach(el => {
+  return  el * 3
+});
 console.log(newArr); // undefined
 ```
 
@@ -30,7 +32,10 @@ If we want to double each number in the `arr` without making changes to it, we h
 
 ```jsx
 const someNewArr = [];
-arr.forEach(el => someNewArr.push(el * 2));
+arr.forEach(el => {
+  someNewArr.push(el * 2)
+  return someNewArr
+});
 
 console.log(`forEach-pushed: ${someNewArr}`); // forEach-pushed: 2,4,6
 ```
@@ -38,7 +43,9 @@ console.log(`forEach-pushed: ${someNewArr}`); // forEach-pushed: 2,4,6
 If we want for any reason to mutate original array:
 
 ```jsx
-arr.forEach((el, i) => (arr[i] = el * 2));
+arr.forEach((el, i) => {
+  return arr[i] = el * 2
+});
 
 console.log(`forEach-mutated: ${arr}`); // forEach-mutated: 2,4,6
 ```
@@ -48,9 +55,13 @@ console.log(`forEach-mutated: ${arr}`); // forEach-mutated: 2,4,6
 The only proper way of going through an array and making changes to it without actually changing the original array is using `.map()`:
 
 ```jsx
-const updatedArr = arr.map(el => el * 2);
+const updatedArr = arr.map(el => {
+  return el * 2
+});
 
 console.log(`mapped: ${updatedArr}`); // mapped: 4,8,12
 ```
 
 _In case you are wondering how we got 4, 8 and 12, remember we mutated original array earlier._
+
+Also don't forget that **with .map, you have to return a value out, or else your new array will be filled with a bunch of undefineds**.
